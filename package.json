@@ -1,0 +1,19 @@
+{
+  "name": "cv",
+  "version": "1.0.0",
+  "description": "Curriculum vitae de Felipe Mestre",
+  "main": "index.js",
+  "scripts": {
+    "test": "echo \"Error: no test specified\" && exit 1"
+  },
+  "repository": {
+    "type": "git",
+    "url": "git+https://FelipeMestre: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@github.com/ucudal/PW_2021_Website-FelipeMestre.git"
+  },
+  "author": "Felipe Mestre",
+  "license": "ISC",
+  "bugs": {
+    "url": "https://github.com/ucudal/PW_2021_Website-FelipeMestre/issues"
+  },
+  "homepage": "https://github.com/ucudal/PW_2021_Website-FelipeMestre#readme"
+}
