@@ -15,5 +15,11 @@
   "bugs": {
     "url": "https://github.com/ucudal/PW_2021_Website-FelipeMestre/issues"
   },
-  "homepage": "https://github.com/ucudal/PW_2021_Website-FelipeMestre#readme"
+  "homepage": "https://github.com/ucudal/PW_2021_Website-FelipeMestre#readme",
+  "devDependencies": {
+    "autoprefixer": "^10.3.3",
+    "browser-sync": "^2.27.5",
+    "postcss": "^8.3.6",
+    "tailwindcss": "^2.2.7"
+  }
 }
