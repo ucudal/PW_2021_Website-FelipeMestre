@@ -1,3 +1,15 @@
 @tailwind base;
 @tailwind components;
 @tailwind utilities;
+
+.dataIcon{
+    height: 80px;
+    width: 80px;
+    overflow: hidden;
+    margin-right: 2rem;
+}
+
+.dataIcon .dataImg{
+    width: 100%;
+    min-height: 100%;
+}

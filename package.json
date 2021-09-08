@@ -6,8 +6,8 @@
   "scripts": {
     "test": "npm run test",
     "start": "browser-sync start --server --serveStatic 'docs' --files '*/.html, */.css'",
-    "tailwind": "npx tailwindcss -i ./src/tailwind.css -o ./docs/style.css",
-    "tailwind:watch": "npm run tailwind -- --watch"
+    "tailwind": "tailwindcss -i ./src/tailwind.css -o ./docs/style.css ",
+    "tailwind:watch": "npm run tailwind -- --watch --jit"
   },
   "repository": {
     "type": "git",
@@ -23,5 +23,9 @@
     "autoprefixer": "^10.3.3",
     "browser-sync": "^2.27.5",
     "postcss": "^8.3.6"
+  },
+  "dependencies": {
+    "@tailwindcss/typography": "^0.4.1",
+    "tailwindcss": "^2.2.11"
   }
 }
