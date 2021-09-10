@@ -6,8 +6,8 @@
   "scripts": {
     "test": "npm run test",
     "start": "browser-sync start --server --serveStatic 'docs' --files '*/.html, */.css'",
-    "tailwind": "tailwindcss -i ./src/tailwind.css -o ./docs/style.css ",
-    "tailwind:watch": "npm run tailwind -- --watch --jit"
+    "tailwind": "tailwindcss -i ./src/tailwind.css -o ./docs/style.css --jit",
+    "tailwind:watch": "npm run tailwind -- --watch"
   },
   "repository": {
     "type": "git",

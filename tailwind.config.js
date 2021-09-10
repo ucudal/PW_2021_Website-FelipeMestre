@@ -3,7 +3,7 @@ module.exports = {
   purge: [
     "docs/*.html"
   ], //Esto permite decirle a tailwind en que lugar se usa tailwind
-  darkMode: false, // or 'media' or 'class'
+  darkMode: 'media', // or 'media' or 'class'
   theme: {//Esto es una capa de personalizacion donde podemos agregar clases nuevas que van a estar disponibles en el html
     extend: {
       colors: {
