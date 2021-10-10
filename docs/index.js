@@ -75,17 +75,20 @@ function showModalHandler() {
   // botones
   const modalCancelAction = document.createElement('button');
   modalCancelAction.textContent = 'Cancelar';
-  modalCancelAction.className = 'btn btn--alt bg-green-500 p-2 rounded-md text-white';
+  modalCancelAction.className = 'bg-blue-500 hover:bg-blue-700 text-white font-bold py-2 px-4 rounded-full m-4';
+  modalCancelAction.style = 'float : right;';
+
   modalCancelAction.addEventListener('click', closeModalHandler);
 
   const modalConfirmAction = document.createElement('button');
   modalConfirmAction.textContent = 'Enviar';
-  modalConfirmAction.className = 'btn bg-green-500 p-2 rounded-md text-white';
+  modalConfirmAction.className = 'bg-blue-500 hover:bg-blue-700 text-white font-bold py-2 px-4 rounded-full m-4';
+  modalConfirmAction.style = 'float : right;';
   modalConfirmAction.addEventListener('click', submitModalHandler);
 
   const buttonContainer = document.createElement('div');
-  buttonContainer.appendChild(modalCancelAction);
   buttonContainer.appendChild(modalConfirmAction);
+  buttonContainer.appendChild(modalCancelAction);
   buttonContainer.style = 'margin-right : 2.5rem ;'
 
   // compendio de todo
@@ -131,5 +134,6 @@ function submitModalHandler(){
   var email = document.getElementById('mailField');
   var person = new Person(name,lastName,phone,email);
   person.Show();
+  closeModalHandler();
   
 }
