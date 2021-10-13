@@ -35,9 +35,13 @@ function showModalHandler() {
   mailTitle.className = 'h2'
   mailTitle.textContent = 'Mail';
 
-  const fieldsDiv = document.createElement('fieldsDiv');
-  fieldsDiv.className = 'div';
-  fieldsDiv.style = 'display: inline-grid ; margin-left: 4rem ; height : 75%';
+  const form = document.createElement('form');
+  form.className = 'form';
+  form.style = 'display: inline-grid ; margin-left: 4rem ; height : 75%';
+  form.addEventListener('submit', submitModalHandler);
+  form.id = 'contactForm';
+  form.action = '';
+  form.method = 'POST';
 
   //Inputs
   const nameField = document.createElement('input');
@@ -63,40 +67,37 @@ function showModalHandler() {
   mailField.className = 'input';
   mailField.type = 'email';
 
-  fieldsDiv.append(nameTitle);
-  fieldsDiv.append(nameField);
-  fieldsDiv.append(lastNameTitle);
-  fieldsDiv.append(lastNameField);
-  fieldsDiv.append(phoneTitle)
-  fieldsDiv.append(phoneField);
-  fieldsDiv.append(mailTitle);
-  fieldsDiv.append(mailField);
+  form.append(nameTitle);
+  form.append(nameField);
+  form.append(lastNameTitle);
+  form.append(lastNameField);
+  form.append(phoneTitle)
+  form.append(phoneField);
+  form.append(mailTitle);
+  form.append(mailField);
 
   // botones
   const modalCancelAction = document.createElement('button');
   modalCancelAction.textContent = 'Cancelar';
-  modalCancelAction.className = 'bg-blue-500 hover:bg-blue-700 text-white font-bold py-2 px-4 rounded-full m-4';
+  modalCancelAction.className = 'bg-blue-500 hover:bg-blue-400 text-white font-bold py-2 px-4 m-4';
   modalCancelAction.style = 'float : right;';
+  modalCancelAction.type = "button";
 
   modalCancelAction.addEventListener('click', closeModalHandler);
 
   const modalConfirmAction = document.createElement('button');
   modalConfirmAction.textContent = 'Enviar';
-  modalConfirmAction.className = 'bg-blue-500 hover:bg-blue-700 text-white font-bold py-2 px-4 rounded-full m-4';
+  modalConfirmAction.className = 'bg-blue-500 hover:bg-blue-400 text-white font-bold py-2 px-4 m-4';
   modalConfirmAction.style = 'float : right;';
-  modalConfirmAction.addEventListener('click', submitModalHandler);
-
-  const buttonContainer = document.createElement('div');
-  buttonContainer.appendChild(modalConfirmAction);
-  buttonContainer.appendChild(modalCancelAction);
-  buttonContainer.style = 'margin-right : 2.5rem ;'
-
+  modalConfirmAction.type = "submit";
+  
   // compendio de todo
   modal.append(modalTitle);
-  modal.append(fieldsDiv);
-  modal.append(buttonContainer);
+  form.append(modalConfirmAction);
+  form.append(modalCancelAction);
+  modal.appendChild(form);
 
-  document.body.append(modal);
+  document.body.appendChild(modal);
 
   backdrop = document.createElement('div');
   backdrop.className = 'backdrop';
@@ -114,6 +115,16 @@ function closeModalHandler() {
   backdrop = null;
 }
 
+function submitModalHandler(){
+  var name = document.getElementById('nameField');
+  var lastName = document.getElementById('lastNameField');
+  var phone = document.getElementById('phoneField');
+  var email = document.getElementById('mailField');
+  var person = new Person(name,lastName,phone,email);
+  person.Show();
+  closeModalHandler();
+}
+
 class Person {
   constructor(name,lastName,phone,mail){
     this.name = name.value;
@@ -127,13 +138,3 @@ class Person {
   }
 }
 
-function submitModalHandler(){
-  var name = document.getElementById('nameField');
-  var lastName = document.getElementById('lastNameField');
-  var phone = document.getElementById('phoneField');
-  var email = document.getElementById('mailField');
-  var person = new Person(name,lastName,phone,email);
-  person.Show();
-  closeModalHandler();
-  
-}

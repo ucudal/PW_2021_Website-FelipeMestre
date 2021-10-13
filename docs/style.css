@@ -766,7 +766,7 @@ video {
   background-color: antiquewhite;
 }
 
-.modal .btn {
+.form .div .btn {
   float: right;
   font-weight: bold;
   background: var(--blue);
@@ -783,13 +783,17 @@ video {
   font-size: 3rem;
 }
 
-.modal .div .h2 {
+.form {
+  z-index: 200;
+}
+
+.form .h2 {
   margin-left: 0.5rem;
   font-weight: bold;
   font-family: 'Franklin Gothic Medium', 'Arial Narrow', Arial, sans-serif;
 }
 
-.modal .div .input {
+.form .input {
   margin-bottom: 2.5rem;
   border-radius: 10rem;
   padding-left: 1rem;
