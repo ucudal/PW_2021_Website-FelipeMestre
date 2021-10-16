@@ -12,7 +12,9 @@ module.exports = {
     }, //Esto extiende lo que ya hay, si lo pones afuera pones cosas como que solo existe eso
   },
   variants: {
-    extend: {},
+    extend: {
+      boxShadow: ['active'],
+    },
   },
   plugins: [require('@tailwindcss/typography')],
 }

@@ -3,76 +3,63 @@
 @tailwind utilities;
 
 .dataIcon{
-    height: 80px;
+    margin-bottom: 1rem;
+    display: flex;
+    align-items: center;
+    justify-items: center;
     width: 80px;
     overflow: hidden;
     margin-right: 2rem;
-}
-
+  }
+  
 .dataIcon .dataImg{
     width: 100%;
     min-height: 100%;
-}
-
-.dataIcon{
-    height: 80px;
-    width: 80px;
-    overflow: hidden;
-    margin-right: 2rem;
   }
   
-  .dataIcon .dataImg{
-    width: 100%;
-    min-height: 100%;
-  }
-  
-  .modal{
+.modal{
     border-radius: 5rem;
-    height: 70%;
-    width: 70%;
+    height: 85%;
+    width: 60%;
     z-index: 2;
     position: absolute;
     left: 50%;
     top: 50%;
     transform: translate(-50%, -50%);
     background-color: antiquewhite;
-
+    display: block;
   }
   
-  .form .div .btn {
-    float: right;
-    font-weight: bold;
-    background: var(--blue);
-    color: var(--white);
-    padding: 0.75rem 1.75rem;
-    margin-bottom: 1rem;
-    border-radius: 5px;
-    border-color: black;
-  }
-
-  
-  .modal .h1 {
+.modal .h1 {
+    margin-top: 1rem;
     font-weight: bolder;
     text-align: center; 
     font-size: 3rem;
   }
 
-  .form {
+.form {
     z-index: 200;
+    margin-top: 3rem;
+    margin-left: 4rem ;
+    margin-right: 4rem ;
+    display: grid ; 
+    height : 75%;
   }
-  .form .h2 {
+
+.form .h2 {
     margin-left: 0.5rem;
     font-weight: bold;
     font-family: 'Franklin Gothic Medium', 'Arial Narrow', Arial, sans-serif;
   }
 
-  .form .input {
+.form .input {
     margin-bottom: 2.5rem;
     border-radius: 10rem;
     padding-left: 1rem;
+    width: 30%;
   }
   
-  .backdrop {
+.backdrop {
     position: fixed; /* Stay in place */
     z-index: 1; /* Sit on top */
     left: 0;
@@ -83,3 +70,32 @@
     background-color: rgb(0,0,0); /* Fallback color */
     background-color: rgba(0,0,0,0.4); /* Black w/ opacity */
   }
+
+.button {
+    background-color: rgba(59, 130, 246, 1);
+    color : white;
+    font-weight: 700;
+    padding-left: 1rem;
+    padding-right: 1rem;
+    border-bottom-width: 4px;
+    border-color: rgba(29, 78, 216, 1);
+    border-radius: 5rem;
+    width: 16.666667%;
+  }
+
+
+.modal .button {
+  padding-top: 0.5rem;
+  padding-bottom: 0.5rem;
+  margin-left: 2rem;
+  width: 15%;
+  background-color: chocolate;
+  border-color: chocolate;
+  float : right;
+}
+
+.div .button {
+  float : right;
+  margin: 2rem;
+}
+
