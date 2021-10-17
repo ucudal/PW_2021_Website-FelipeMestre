@@ -2,6 +2,17 @@
 @tailwind components;
 @tailwind utilities;
 
+.background{
+  background: rgb(191,187,232);
+background: linear-gradient(356deg, rgba(191,187,232,1) 0%, rgba(16,13,147,1) 100%);
+}
+
+.cv-card {
+  background: rgb(2,0,36);
+  background: linear-gradient(356deg, rgba(2,0,36,1) 0%, rgba(218, 216, 224, 0.779) 4%, rgb(195, 215, 219) 100%);
+}
+
+
 .dataIcon{
     margin-bottom: 1rem;
     display: flex;
@@ -97,5 +108,25 @@
 .div .button {
   float : right;
   margin: 2rem;
+}
+
+.modal.experienceModal {
+  height: 50%;
+  overflow-y: auto;
+}
+
+.modal.experienceModal .button {
+  margin-left: 0rem;
+  margin-right: 3rem;
+}
+
+.modal .ul {
+  max-width: fit-content;
+  margin-left: 2rem;
+  margin-right: 2rem;
+}
+
+.modal .li .h2 {
+  margin-top: 0rem !important;
 }
 

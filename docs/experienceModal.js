@@ -7,25 +7,25 @@ function showExperienceHandler() {
         return;
     }
     experience = document.createElement('modal');
-    experience.className = 'modal';
+    experience.className = 'modal experienceModal';
     var modalTitle = document.createElement('h1');
     modalTitle.className = 'h1';
     modalTitle.textContent = 'Proyectos';
 
-    proyectList = document.createElement('proyectLists');
-    proyectList.className = 'ul';
+    proyectList = document.createElement('ul');
+    proyectList.className = 'ul prose';
 
-    idalenProyect = document.createElement('idalenProyect');
+    idalenProyect = document.createElement('li');
     idalenProyect.className = 'li';
 
-    idalenHeader = document.createElement('idalentHeader');
+    idalenHeader = document.createElement('h2');
     idalenHeader.className = 'h2'
     idalenHeader.textContent = 'Empresa forestal Idalen';
 
     idalenContent = document.createElement('p');
     idalenContent.className = 'p';
     idalenContent.textContent = "Mi rol consistio en ser desarrollador junior haciendo frontend con angular, backend con ASP.net y con dos bases de datos en " +
-    "sql server. El proyecto consistio en un sistema de gestion de viajes entre cosechas de madera, acopios intermedios y Montevideo.";
+    "sql server. El proyecto fue un sistema de gestion de viajes entre cosechas de madera, acopios intermedios y Montevideo.";
     
     idalenContentP2 = document.createElement('p');
     idalenContentP2.className = 'p';
@@ -38,28 +38,18 @@ function showExperienceHandler() {
     idalenProyect.append(idalenContentP2);
     proyectList.append(idalenProyect);
 
-    // botones
-    // var experienceCancelAction = document.createElement('button');
-    // experienceCancelAction.textContent = 'Cancelar';
-    // experienceCancelAction.className = 'button';
-    // experienceCancelAction.type = "button";
-    // experienceCancelAction.addEventListener('click', closeexperienceHandler);
-    // var experienceConfirmAction = document.createElement('button');
-    // experienceConfirmAction.textContent = 'Enviar';
-    // experienceConfirmAction.className = 'button';
-    // experienceConfirmAction.type = "submit";
-    // experienceConfirmAction.addEventListener('submit', submitexperienceHandler);
-    // var buttonContainer = document.createElement('div');
-    // buttonContainer.appendChild(experienceConfirmAction);
-    // buttonContainer.appendChild(experienceCancelAction);
-    // // compendio de todo
-    // experience.append(experienceTitle);
-    // experience.appendChild(form);
-    // form.append(buttonContainer);
-    // document.body.appendChild(experience);
+    //botones
+    var closeButton = document.createElement('button');
+    closeButton.textContent = 'Cerrar';
+    closeButton.className = 'button';
+    closeButton.type = "button";
+    closeButton.addEventListener('click', closeexperienceHandler);
+    var buttonContainer = document.createElement('div');
+    buttonContainer.appendChild(closeButton);
     
     experience.append(modalTitle);
     experience.append(proyectList);
+    experience.append(buttonContainer); 
     backdrop = document.createElement('div');
     backdrop.className = 'backdrop';
     backdrop.addEventListener('click', closeexperienceHandler);
@@ -71,13 +61,4 @@ function closeexperienceHandler() {
     experience = null;
     backdrop.remove();
     backdrop = null;
-}
-function submitexperienceHandler() {
-    var name = document.getElementById('nameField');
-    var lastName = document.getElementById('lastNameField');
-    var phone = document.getElementById('phoneField');
-    var email = document.getElementById('mailField');
-    var person = new Person(name, lastName, phone, email);
-    person.Show();
-    closeexperienceHandler();
 }

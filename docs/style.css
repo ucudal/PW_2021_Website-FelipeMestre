@@ -596,8 +596,6 @@ video {
 }
 
 *, ::before, ::after {
-  --tw-border-opacity: 1;
-  border-color: rgba(229, 231, 235, var(--tw-border-opacity));
   --tw-ring-offset-shadow: 0 0 #0000;
   --tw-ring-shadow: 0 0 #0000;
   --tw-shadow: 0 0 #0000;
@@ -1020,12 +1018,16 @@ video {
   max-height: 13rem;
 }
 
+.max-h-48 {
+  max-height: 12rem;
+}
+
 .w-1\/2 {
   width: 50%;
 }
 
-.w-full {
-  width: 100%;
+.w-11\/12 {
+  width: 91.666667%;
 }
 
 .w-14 {
@@ -1072,16 +1074,33 @@ video {
   border-radius: 0.5rem;
 }
 
-.border-4 {
-  border-width: 4px;
+.rounded-xl {
+  border-radius: 0.75rem;
+}
+
+.rounded-full {
+  border-radius: 9999px;
+}
+
+.px-12 {
+  padding-left: 3rem;
+  padding-right: 3rem;
 }
 
 .pt-4 {
   padding-top: 1rem;
 }
 
+.pr-8 {
+  padding-right: 2rem;
+}
+
 .pb-4 {
   padding-bottom: 1rem;
+}
+
+.text-center {
+  text-align: center;
 }
 
 .font-sans {
@@ -1096,6 +1115,21 @@ video {
 .text-2xl {
   font-size: 1.5rem;
   line-height: 2rem;
+}
+
+.shadow-md {
+  --tw-shadow: 0 4px 6px -1px rgba(0, 0, 0, 0.1), 0 2px 4px -1px rgba(0, 0, 0, 0.06);
+  box-shadow: var(--tw-ring-offset-shadow, 0 0 #0000), var(--tw-ring-shadow, 0 0 #0000), var(--tw-shadow);
+}
+
+.background{
+  background: rgb(191,187,232);
+  background: linear-gradient(356deg, rgba(191,187,232,1) 0%, rgba(16,13,147,1) 100%);
+}
+
+.cv-card {
+  background: rgb(2,0,36);
+  background: linear-gradient(356deg, rgba(2,0,36,1) 0%, rgba(218, 216, 224, 0.779) 4%, rgb(195, 215, 219) 100%);
 }
 
 .dataIcon{
@@ -1201,12 +1235,26 @@ video {
   margin: 2rem;
 }
 
-.hover\:w-11\/12:hover {
-  width: 91.666667%;
+.modal.experienceModal {
+  height: 50%;
+  overflow-y: auto;
 }
 
-.hover\:rounded-xl:hover {
-  border-radius: 0.75rem;
+.modal.experienceModal .button {
+  margin-left: 0rem;
+  margin-right: 3rem;
+}
+
+.modal .ul {
+  max-width: -webkit-fit-content;
+  max-width: -moz-fit-content;
+  max-width: fit-content;
+  margin-left: 2rem;
+  margin-right: 2rem;
+}
+
+.modal .li .h2 {
+  margin-top: 0rem !important;
 }
 
 .hover\:border-blue-500:hover {
@@ -1219,9 +1267,23 @@ video {
   background-color: rgba(96, 165, 250, var(--tw-bg-opacity));
 }
 
+.hover\:px-20:hover {
+  padding-left: 5rem;
+  padding-right: 5rem;
+}
+
+.hover\:px-12:hover {
+  padding-left: 3rem;
+  padding-right: 3rem;
+}
+
 .hover\:px-2:hover {
   padding-left: 0.5rem;
   padding-right: 0.5rem;
+}
+
+.hover\:text-center:hover {
+  text-align: center;
 }
 
 .hover\:opacity-50:hover {
@@ -1229,6 +1291,11 @@ video {
 }
 
 .hover\:shadow-2xl:hover {
+  --tw-shadow: 0 25px 50px -12px rgba(0, 0, 0, 0.25);
+  box-shadow: var(--tw-ring-offset-shadow, 0 0 #0000), var(--tw-ring-shadow, 0 0 #0000), var(--tw-shadow);
+}
+
+.hover\:hover\:shadow-2xl:hover:hover {
   --tw-shadow: 0 25px 50px -12px rgba(0, 0, 0, 0.25);
   box-shadow: var(--tw-ring-offset-shadow, 0 0 #0000), var(--tw-ring-shadow, 0 0 #0000), var(--tw-shadow);
 }

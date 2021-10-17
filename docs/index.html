@@ -10,53 +10,58 @@
 </head>
 
 <body>
-    <div class="flex flex-col h-screen">
-        <div class="rounded-lg border-4 w-1/2 h-screen mt-8 mb-14 mx-auto items-end">            
+    <div class="flex flex-col h-screen background">
+        <div class="rounded-lg hover:shadow-2xl w-1/2 h-screen mt-8 mb-14 mx-auto items-end cv-card">            
             <div class="flex justify-between items-start">
-                <img src="./../assets/images/profile.jfif" class="max-h-52 m-4 hover:shadow-2xl" style="border-radius: 0px 75px 85px 75px;"
+                <img src="./../assets/images/profile.jfif" class="max-h-48 m-4 hover:hover:shadow-2xl" style="border-radius: 0px 75px 85px 75px;"
                 alt="Mi foro de perfil">
-                <div class="pt-4">
+                <div class="pt-4 pr-8">
                     <h1 class="text-4xl font-sans my-auto ">Felipe Mestre</h1>            
-                    <p class="pt-4 leading prose">
-                        Estudiante de cuarto año de Ingeniería en informática en la Universidad Católica del Uruguay. Actualmente trabajo
-                        como desarrollador full - stack utilizando angular, C# y SQL server. 
+                    <p class="pt-4 prose">
+                        Soy uruguayo, vivo en la ciudad de Montevideo y tengo 22 años, me gusta la musica y la historia. 
+                        Estoy cursando cuarto año de Ingeniería en informática en la Universidad Católica del Uruguay. 
+                        Actualmente trabajo como desarrollador full - stack en una empresa llamada Inzol Consulting. 
                     </p>        
                 </div>
             </div>
             <div class="flex flex-col self-center align">
-                <div class="ml-8"> <!-- Educacion -->
+                <div class="ml-8 hover:shadow-2xl hover:px-2 text-center rounded-full"> <!-- Educacion -->
                     <h3 class="text-2xl font-sans my-auto ">Educacion</h3>
                     <ul class="ml-32">
-                        <li class="flex pt-4 pb-4">
-                            <div class="w-full flex items-center justify-start hover:shadow-2xl hover:px-2 hover:w-11/12 hover:rounded-xl">
-                                <div class="dataIcon">
-                                    <img src="./../assets/images/catolica.jfif" class="w-14" alt="Logo de la universida catolica del Uruguay">
+                        <a target="_blank" href="https://carreras.ucu.edu.uy/index.php/informatica?gclid=CjwKCAjwk6-LBhBZEiwAOUUDp-4W6K_wWH-BzxsQfBJLMSpNPCtCRQWKw2szGcCtYBntJ7ZcmrPU-RoC9ckQAvD_BwE">
+                            <li class="flex pt-4 pb-4">
+                                <div class=" flex items-center justify-start w-11/12 px-12 rounded-xl shadow-md hover:shadow-2xl hover:px-20">
+                                    <div class="dataIcon">
+                                        <img src="./../assets/images/catolica.jfif" class="w-14" alt="Logo de la universida catolica del Uruguay">
+                                    </div>
+                                    <div class="prose">
+                                        <h4>Universidad Catolica del Uruguay (2018 - 2022)</h4>
+                                        <p>Cursando</p>
+                                    </div>
+                                </div>                  
+                            </li>
+                        </a>
+                        <a target="_blank" href="https://michiganassessment.org/michigan-tests/ecpe/">
+                            <li class="flex pt-4 pb-4">
+                                <div class=" flex items-center justify-start w-11/12 px-12 rounded-xl shadow-md hover:shadow-2xl hover:px-20">
+                                    <div class="dataIcon"> 
+                                        <img src="./../assets/images/michigan.png" class="w-14" alt="Logo de la universidad de Michigan">
+                                    </div>
+                                    <div class="prose"> 
+                                        <h4>Michigan language Assestment</h4>
+                                        <p>Certificate of Proficiency in English (2017)</p>
+                                    </div>
                                 </div>
-                                <div class="prose">
-                                    <h4>Universidad Catolica del Uruguay (2018 - 2022)</h4>
-                                    <p>Cursando</p>
-                                </div>
-                            </div>                  
-                        </li>
-                        <li class="flex pt-4 pb-4">
-                            <div class="w-full flex items-center justify-start hover:shadow-2xl hover:px-2 hover:w-11/12 hover:rounded-xl mouse">
-                                <div class="dataIcon"> 
-                                    <img src="./../assets/images/michigan.png" class="w-14" alt="Logo de la universidad de Michigan">
-                                </div>
-                                <div class="prose"> 
-                                    <h4>Michigan language Assestment</h4>
-                                    <p>Certificate of Proficiency in English (2017)</p>
-                                </div>
-                            </div>
-                        </li>   
+                            </li> 
+                        </a>
                     </ul>
                 </div>
     
-                <div class="ml-8"> <!-- Exp -->
+                <div class="ml-8 hover:shadow-2xl hover:px-2 text-center rounded-full"> <!-- Exp -->
                     <h3 class="text-2xl font-sans my-auto ">Experiencia</h3>
                     <ul class="ml-32">
                         <li class="pt-4 pb-4">
-                            <div id="experiencia" class="w-full flex items-center justify-start cursor-pointer hover:shadow-2xl hover:w-11/12 hover:px-2 hover:rounded-xl">
+                            <div id="experiencia" class="items-end flex justify-start cursor-pointer px-12 w-11/12 rounded-xl shadow-md hover:shadow-2xl hover:px-20">
                                 <div class="dataIcon">
                                     <img src="./../assets/images/Inzol.svg" alt="Logo de la empresa Inzol Consulting">
                                 </div>
