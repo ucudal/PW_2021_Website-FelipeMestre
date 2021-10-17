@@ -972,6 +972,10 @@ video {
   margin-bottom: 0;
 }
 
+.m-3 {
+  margin: 0.75rem;
+}
+
 .m-4 {
   margin: 1rem;
 }
@@ -1014,16 +1018,12 @@ video {
   height: 100vh;
 }
 
-.max-h-52 {
-  max-height: 13rem;
-}
-
 .max-h-48 {
   max-height: 12rem;
 }
 
-.w-1\/2 {
-  width: 50%;
+.w-3\/5 {
+  width: 60%;
 }
 
 .w-11\/12 {
@@ -1034,8 +1034,8 @@ video {
   width: 3.5rem;
 }
 
-.max-w-full {
-  max-width: 100%;
+.max-w-2xl {
+  max-width: 42rem;
 }
 
 .cursor-pointer {
@@ -1074,12 +1074,12 @@ video {
   border-radius: 0.5rem;
 }
 
-.rounded-xl {
-  border-radius: 0.75rem;
-}
-
 .rounded-full {
   border-radius: 9999px;
+}
+
+.rounded-xl {
+  border-radius: 0.75rem;
 }
 
 .px-12 {
@@ -1089,10 +1089,6 @@ video {
 
 .pt-4 {
   padding-top: 1rem;
-}
-
-.pr-8 {
-  padding-right: 2rem;
 }
 
 .pb-4 {
@@ -1130,6 +1126,12 @@ video {
 .cv-card {
   background: rgb(2,0,36);
   background: linear-gradient(356deg, rgba(2,0,36,1) 0%, rgba(218, 216, 224, 0.779) 4%, rgb(195, 215, 219) 100%);
+}
+
+.cv-card .bottom {
+  position: absolute;
+  width: 57%;
+  bottom: 5rem;
 }
 
 .dataIcon{
@@ -1267,23 +1269,14 @@ video {
   background-color: rgba(96, 165, 250, var(--tw-bg-opacity));
 }
 
-.hover\:px-20:hover {
-  padding-left: 5rem;
-  padding-right: 5rem;
-}
-
-.hover\:px-12:hover {
-  padding-left: 3rem;
-  padding-right: 3rem;
-}
-
 .hover\:px-2:hover {
   padding-left: 0.5rem;
   padding-right: 0.5rem;
 }
 
-.hover\:text-center:hover {
-  text-align: center;
+.hover\:px-20:hover {
+  padding-left: 5rem;
+  padding-right: 5rem;
 }
 
 .hover\:opacity-50:hover {

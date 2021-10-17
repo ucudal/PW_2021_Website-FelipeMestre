@@ -12,6 +12,12 @@ background: linear-gradient(356deg, rgba(191,187,232,1) 0%, rgba(16,13,147,1) 10
   background: linear-gradient(356deg, rgba(2,0,36,1) 0%, rgba(218, 216, 224, 0.779) 4%, rgb(195, 215, 219) 100%);
 }
 
+.cv-card .bottom {
+  position: absolute;
+  width: 57%;
+  bottom: 5rem;
+}
+
 
 .dataIcon{
     margin-bottom: 1rem;
