@@ -1010,6 +1010,22 @@ video {
   margin-left: 0.75rem;
 }
 
+.ml-12 {
+  margin-left: 3rem;
+}
+
+.mt-1 {
+  margin-top: 0.25rem;
+}
+
+.mb-2 {
+  margin-bottom: 0.5rem;
+}
+
+.mb-1 {
+  margin-bottom: 0.25rem;
+}
+
 .flex {
   display: flex;
 }
@@ -1084,6 +1100,10 @@ video {
 
 .rounded-xl {
   border-radius: 0.75rem;
+}
+
+.p-3 {
+  padding: 0.75rem;
 }
 
 .px-12 {
