@@ -990,8 +990,8 @@ video {
   margin-bottom: auto;
 }
 
-.mt-8 {
-  margin-top: 2rem;
+.mt-1 {
+  margin-top: 0.25rem;
 }
 
 .mb-6 {
@@ -1012,10 +1012,6 @@ video {
 
 .ml-3 {
   margin-left: 0.75rem;
-}
-
-.mt-1 {
-  margin-top: 0.25rem;
 }
 
 .flex {
@@ -1242,6 +1238,7 @@ video {
   width: 15%;
   background-color: chocolate;
   border-color: chocolate;
+  margin-left: 1rem;
 }
 
 .div .button {
