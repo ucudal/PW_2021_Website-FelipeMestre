@@ -4,7 +4,7 @@
 
 .background{
   background: rgb(191,187,232);
-background: linear-gradient(356deg, rgba(191,187,232,1) 0%, rgba(16,13,147,1) 100%);
+  background: linear-gradient(356deg, rgba(191,187,232,1) 0%, rgba(16,13,147,1) 100%);
 }
 
 .cv-card {
@@ -29,8 +29,11 @@ background: linear-gradient(356deg, rgba(191,187,232,1) 0%, rgba(16,13,147,1) 10
     margin-right: 2rem;
   }
   
-.dataIcon .dataImg{
+  .dataIcon .dataImg, .backdrop {
     width: 100%;
+  }
+
+.dataIcon .dataImg{
     min-height: 100%;
   }
   
@@ -81,7 +84,6 @@ background: linear-gradient(356deg, rgba(191,187,232,1) 0%, rgba(16,13,147,1) 10
     z-index: 1; /* Sit on top */
     left: 0;
     top: 0;
-    width: 100%; /* Full width */
     height: 100%; /* Full height */
     overflow: auto; /* Enable scroll if needed */
     background-color: rgb(0,0,0); /* Fallback color */
@@ -99,6 +101,9 @@ background: linear-gradient(356deg, rgba(191,187,232,1) 0%, rgba(16,13,147,1) 10
     width: 16.666667%;
   }
 
+.modal .button, div.button {
+  float : right;
+}
 
 .modal .button {
   padding-top: 0.5rem;
@@ -107,11 +112,9 @@ background: linear-gradient(356deg, rgba(191,187,232,1) 0%, rgba(16,13,147,1) 10
   width: 15%;
   background-color: chocolate;
   border-color: chocolate;
-  float : right;
 }
 
 .div .button {
-  float : right;
   margin: 2rem;
 }
 

@@ -1148,8 +1148,11 @@ video {
   margin-right: 2rem;
 }
 
-.dataIcon .dataImg{
+.dataIcon .dataImg, .backdrop {
   width: 100%;
+}
+
+.dataIcon .dataImg{
   min-height: 100%;
 }
 
@@ -1202,8 +1205,6 @@ video {
   /* Sit on top */
   left: 0;
   top: 0;
-  width: 100%;
-  /* Full width */
   height: 100%;
   /* Full height */
   overflow: auto;
@@ -1225,6 +1226,10 @@ video {
   width: 16.666667%;
 }
 
+.modal .button, div.button {
+  float : right;
+}
+
 .modal .button {
   padding-top: 0.5rem;
   padding-bottom: 0.5rem;
@@ -1232,11 +1237,9 @@ video {
   width: 15%;
   background-color: chocolate;
   border-color: chocolate;
-  float : right;
 }
 
 .div .button {
-  float : right;
   margin: 2rem;
 }
 
