@@ -994,8 +994,8 @@ video {
   margin-top: 2rem;
 }
 
-.mb-14 {
-  margin-bottom: 3.5rem;
+.mb-6 {
+  margin-bottom: 1.5rem;
 }
 
 .ml-8 {
@@ -1024,6 +1024,10 @@ video {
 
 .w-3\/5 {
   width: 60%;
+}
+
+.w-full {
+  width: 100%;
 }
 
 .w-11\/12 {
@@ -1131,7 +1135,7 @@ video {
 .cv-card .bottom {
   position: absolute;
   width: 57%;
-  bottom: 5rem;
+  bottom: 2.5rem;
 }
 
 .dataIcon{
@@ -1214,8 +1218,7 @@ video {
   background-color: rgba(59, 130, 246, 1);
   color : white;
   font-weight: 700;
-  padding-left: 1rem;
-  padding-right: 1rem;
+  padding: 8px;
   border-bottom-width: 4px;
   border-color: rgba(29, 78, 216, 1);
   border-radius: 5rem;

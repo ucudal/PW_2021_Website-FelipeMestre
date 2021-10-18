@@ -15,7 +15,7 @@ background: linear-gradient(356deg, rgba(191,187,232,1) 0%, rgba(16,13,147,1) 10
 .cv-card .bottom {
   position: absolute;
   width: 57%;
-  bottom: 5rem;
+  bottom: 2.5rem;
 }
 
 
@@ -92,8 +92,7 @@ background: linear-gradient(356deg, rgba(191,187,232,1) 0%, rgba(16,13,147,1) 10
     background-color: rgba(59, 130, 246, 1);
     color : white;
     font-weight: 700;
-    padding-left: 1rem;
-    padding-right: 1rem;
+    padding: 8px;
     border-bottom-width: 4px;
     border-color: rgba(29, 78, 216, 1);
     border-radius: 5rem;
