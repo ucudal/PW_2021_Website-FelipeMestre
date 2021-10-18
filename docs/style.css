@@ -1134,7 +1134,7 @@ video {
 
 .cv-card .bottom {
   position: absolute;
-  width: 57%;
+  width: 56%;
   bottom: 2.5rem;
 }
 
@@ -1219,7 +1219,7 @@ video {
   background-color: rgba(59, 130, 246, 1);
   color : white;
   font-weight: 700;
-  padding: 8px;
+  padding: 10px;
   border-bottom-width: 4px;
   border-color: rgba(29, 78, 216, 1);
   border-radius: 5rem;
@@ -1231,9 +1231,6 @@ video {
 }
 
 .modal .button {
-  padding-top: 0.5rem;
-  padding-bottom: 0.5rem;
-  margin-left: 2rem;
   width: 15%;
   background-color: chocolate;
   border-color: chocolate;
