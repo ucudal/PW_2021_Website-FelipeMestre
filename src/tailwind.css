@@ -12,13 +12,6 @@
   background: linear-gradient(356deg, rgba(2,0,36,1) 0%, rgba(218, 216, 224, 0.779) 4%, rgb(195, 215, 219) 100%);
 }
 
-.cv-card .bottom {
-  position: absolute;
-  width: 56%;
-  bottom: 2.5rem;
-}
-
-
 .dataIcon{
     margin-bottom: 1rem;
     display: flex;
@@ -29,13 +22,10 @@
     margin-right: 2rem;
   }
   
-  .dataIcon .dataImg, .backdrop {
+  .backdrop {
     width: 100%;
   }
 
-.dataIcon .dataImg{
-    min-height: 100%;
-  }
   
 .modal{
     border-radius: 5rem;
@@ -94,12 +84,13 @@
     background-color: rgba(59, 130, 246, 1);
     color : white;
     font-weight: 700;
-    padding: 10px;
+    padding: 5px;
     border-bottom-width: 4px;
     border-color: rgba(29, 78, 216, 1);
     border-radius: 5rem;
     width: 16.666667%;
   }
+
 
 .modal .button, div.button {
   float : right;
@@ -114,6 +105,11 @@
 
 .div .button {
   margin: 2rem;
+}
+
+.footer .button {
+  width: 8.666667%;
+  margin: 0.5rem;
 }
 
 .modal.experienceModal {
@@ -136,3 +132,7 @@
   margin-top: 0rem !important;
 }
 
+.prose .h3{
+  font-size : 1rem !important;
+  margin-bottom: 0 !important;
+}
