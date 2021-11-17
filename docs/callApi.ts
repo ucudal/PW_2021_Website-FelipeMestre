@@ -5,13 +5,13 @@ xhttp.onreadystatechange = function() {
         let jsonValue = JSON.parse(this.responseText);
         
         jsonValue["experiencia-laboral"].forEach(jobJSON => {
-            let job = new JobExperience(jobJSON.company,jobJSON.position,jobJSON.description, jobJSON.initialDate, jobJSON.finishedDate)
+            let job = new JobExperience(jobJSON.empresa,jobJSON.posicion,jobJSON.descripcion, jobJSON.fechaInicio, jobJSON.fechaFin);
             experiences.push(job);
         });;
         generateExperienceCard();
     }
 };
-xhttp.open("GET", "https://PW2021-APINode-FelipeMestre.felipemestre.repl.co/experiencia", true);
+xhttp.open("GET", "https://PW2021-APINode-FelipeMestre.felipemestre.repl.co/experiencia-laboral", true);
 xhttp.send();
 
 

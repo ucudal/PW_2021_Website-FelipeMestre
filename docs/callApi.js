@@ -4,14 +4,14 @@ xhttp.onreadystatechange = function () {
     if (this.readyState == 4 && this.status == 200) {
         var jsonValue = JSON.parse(this.responseText);
         jsonValue["experiencia-laboral"].forEach(function (jobJSON) {
-            var job = new JobExperience(jobJSON.company, jobJSON.position, jobJSON.description, jobJSON.initialDate, jobJSON.finishedDate);
+            var job = new JobExperience(jobJSON.empresa, jobJSON.posicion, jobJSON.descripcion, jobJSON.fechaInicio, jobJSON.fechaFin);
             experiences.push(job);
         });
         ;
         generateExperienceCard();
     }
 };
-xhttp.open("GET", "https://PW2021-APINode-FelipeMestre.felipemestre.repl.co/experiencia", true);
+xhttp.open("GET", "https://PW2021-APINode-FelipeMestre.felipemestre.repl.co/experiencia-laboral", true);
 xhttp.send();
 function generateExperienceCard() {
     experiences.forEach(function (job) {
@@ -39,14 +39,12 @@ var JobExperience = /** @class */ (function () {
         companyLogo.src = "assets/images/" + this.company + ".svg";
         var textDiv = document.createElement("div");
         textDiv.className = "prose";
-        console.log(this.initialDate);
-        console.log(this.finishedDate);
         var companyTitle = document.createElement("h3");
         var initialDateString = this.initialDate.toString().split('T')[0];
         var finishedDateString = this.finishedDate ? this.finishedDate.toString().split('T')[0] : "actualidad";
-        companyTitle.textContent = this.company;
+        companyTitle.textContent = this.company + " (" + initialDateString + " - " + finishedDateString + ")";
         var jobPosition = document.createElement("p");
-        jobPosition.textContent = this.position + " (" + initialDateString + " - " + finishedDateString + ")";
+        jobPosition.textContent = this.position;
         textDiv.appendChild(companyTitle);
         textDiv.appendChild(jobPosition);
         experienceIcon.appendChild(companyLogo);

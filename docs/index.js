@@ -96,12 +96,28 @@ function closeModalHandler() {
     backdrop = null;
 }
 function submitModalHandler() {
+    event.preventDefault();
     var name = document.getElementById('nameField');
     var lastName = document.getElementById('lastNameField');
     var phone = document.getElementById('phoneField');
     var email = document.getElementById('mailField');
     var person = new Person(name, lastName, phone, email);
     person.Show();
+    var payload = {
+        nombreContacto: name,
+        lastName: lastName,
+        phone: phone,
+        email: email
+    };
+    var payloadString = JSON.stringify(payload);
+    var url = "https://PW2021-APINode-FelipeMestre.felipemestre.repl.co/enviar-formulario";
+    fetch(url, {
+        method: "POST",
+        body: payloadString,
+        headers: { 'Content-Type': 'application/json' }
+    }).then(function (response) {
+        response.text().then(function (text) { alert(text); });
+    });
     closeModalHandler();
 }
 var Person = /** @class */ (function () {
