@@ -4,7 +4,7 @@
 La idea de este repositorio es desarrollar un cv virtual con html, css y javascript. 
 
 ### Como ejecutar la pagina?
-Clonar el repo y ejecutar el archivo index.html de la carpeta docs
+Clonar el repo y ejecutar el archivo index.html de la carpeta docs. O sino ingresar a https://ucudal.github.io/PW_2021_Website-FelipeMestre/ que usa gh pages, este es el motivo de tener una carpeta assets dentro de docs ya que gh no deja acceder a carpetas del repo fuera de docs
 
 ### Features de la pagina
 Haciendo clic en cualquiera de las tres tarjetas se abre informacion acerca de. En la tercer tarjeta es un modal hecho por mi. 
