@@ -57,7 +57,9 @@ class JobExperience {
         textDiv.className = "prose";
 
         let companyTitle = document.createElement("h3");
-        companyTitle.textContent = this.company;
+        let initialDateString = this.initialDate.toString().split('T')[0];
+        let finishedDateString = this.finishedDate?  this.finishedDate.toString().split('T')[0] : "actualidad";
+        companyTitle.textContent = this.company + " (" +initialDateString+ " - " + finishedDateString + ")";
 
         let jobPosition = document.createElement("p");
         jobPosition.textContent = this.position;
@@ -77,7 +79,7 @@ class JobExperience {
             this.modal.className = 'modal experienceModal';
             var modalTitle = document.createElement('h1');
             modalTitle.className = 'h1';
-            modalTitle.textContent = 'Proyectos';
+            modalTitle.textContent = 'Descripción';
         
             var proyectList = document.createElement('ul');
             proyectList.className = 'ul prose';
@@ -85,15 +87,10 @@ class JobExperience {
             var idalenProyect = document.createElement('li');
             idalenProyect.className = 'li';
         
-            var idalenHeader = document.createElement('h2');
-            idalenHeader.className = 'h2'
-            idalenHeader.textContent = 'Empresa forestal Idalen';
-        
             var idalenContent = document.createElement('p');
             idalenContent.className = 'p';
             idalenContent.textContent = this.description;
             
-            idalenProyect.append(idalenHeader);
             idalenProyect.append(idalenContent);
             proyectList.append(idalenProyect);
         
