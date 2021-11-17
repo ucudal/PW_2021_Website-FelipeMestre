@@ -70,6 +70,14 @@
     padding-left: 1rem;
     width: 80%;
   }
+
+  .form .input:hover {
+    border: 1px solid #000;
+  }
+
+  .form .button:hover {
+    border: 1px solid white;
+  }
   
 .backdrop {
     position: fixed; /* Stay in place */
