@@ -14,7 +14,7 @@
     <div class="flex flex-col h-full background">
         <div class="rounded-lg hover:shadow-2xl mx-auto items-end cv-card mt-2">            
             <div class="identity-section flex items-start m-3 mb-0">
-                <img src="assets/images/profile.jfif" class="max-h-48 m-4 mb-0 hover:hover:shadow-2xl" style="border-radius: 0px 75px 85px 75px;"
+                <img src="assets/images/profile.jfif" class="max-h-40 m-4 mb-0 hover:hover:shadow-2xl" style="border-radius: 0px 75px 85px 75px;"
                 alt="Mi foto de perfil">
                 <div class="pt-4 ">
                     <h1 class="text-4xl font-sans my-auto ">Felipe Mestre</h1>            
@@ -58,20 +58,10 @@
                     </ul>
                 </div>
     
-                <div class="data-list ml-8 hover:shadow-2xl hover:px-2 pb-4 mt-3 rounded-full"> <!-- Exp -->
-                    <h2 class="text-2xl font-sans pb-2 ">Experiencia</h2>
-                    <ul class="ml-32">
-                        <li >
-                            <div id="experiencia" class="data-card items-end flex justify-start cursor-pointer px-12 w-11/12 rounded-xl shadow-md hover:shadow-2xl hover:px-20">
-                                <div class="dataIcon">
-                                    <img src="assets/images/inzol.svg" alt="Logo de la empresa Inzol Consulting">
-                                </div>
-                                <div class="prose"> 
-                                    <h3>Inzol Consulting</h3>
-                                    <p>Full Stack Developer</p>
-                                </div>
-                            </div>              
-                        </li>
+                <div class="data-list ml-8 hover:shadow-2xl hover:px-2 pb-4 rounded-full"> <!-- Exp -->
+                    <h2 class="text-2xl font-sans">Experiencia</h2>
+                    <ul id="experiencia-lista" class="ml-32">
+                        <!-- loaded in apiCall -->
                     </ul>
                 </div>
             </div>
@@ -89,6 +79,6 @@
         <button class="hover:bg-blue-400 hover:border-blue-500 button" style="margin-bottom: 0.5rem;">Contactar</button>
     </footer>
     <script src="index.js"></script>     
-    <script src="experienceModal.js"></script>
+    <script src="callApi.js"></script>
 </body>
 </html>

@@ -1,7 +1,7 @@
-const button = document.querySelector('button');
+var button = document.querySelector('button');
 
-let modal;
-let backdrop;
+var modal;
+var backdrop;
 
 button.addEventListener('click', showModalHandler);
 
@@ -54,16 +54,22 @@ function showModalHandler() {
   lastNameField.type = 'text';
   const phoneField = document.createElement('input');
   phoneField.id = 'phoneField';
-  phoneField.placeholder = 'Telefono';
+  phoneField.placeholder = 'Formato: 099999999';
   phoneField.className = 'input';
   phoneField.type = 'tel';
   phoneField.pattern = '[0-9]{9}';
   const mailField = document.createElement('input');
   mailField.id = 'mailField';
-  mailField.style = 'margin-bottom : 0rem !important;';
+  mailField.setAttribute('style',"margin-bottom 0rem !important");
+  
   mailField.placeholder = 'Email';
   mailField.className = 'input';
   mailField.type = 'email';
+
+  nameField.setAttribute("required", ""); 
+  lastNameField.setAttribute("required", ""); 
+  phoneField.setAttribute("required", ""); 
+  mailField.setAttribute("required", ""); 
 
   form.append(nameTitle);
   form.append(nameField);

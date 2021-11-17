@@ -1,4 +1,4 @@
-var card = document.getElementById('experiencia');
+var card = document.getElementById('inzol');
 card.addEventListener('click', showExperienceHandler);
 var experience;
 

@@ -9,7 +9,8 @@
     "tailwind": "tailwindcss -i ./src/tailwind.css -o ./docs/style.css --jit",
     "tailwind:watch": "npm run tailwind -- --watch",
     "uglify": "npx uglify-js docs/index.js -o ./docs/script.min.js",
-    "build": "tsc docs/index.ts"
+    "build": "tsc docs/index.ts",
+    "build-api": "tsc docs/callApi.ts"
   },
   "repository": {
     "type": "git",

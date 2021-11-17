@@ -10,8 +10,21 @@
   padding: 1% 10% 0% 10%;
 }
 
+.data-card {
+  cursor: pointer;
+  margin-top: 0.5rem;
+}
+
+#experiencia-lista .data-card {
+  padding-top: 0.5rem;
+  padding-bottom: 0.5rem;
+  margin-top: 0.5rem;
+}
+
 .cv-card {
   background: rgb(195, 215, 219) 100%;
+  overflow-y: auto;
+  height: 87%;
 }
 
 .dataIcon{
@@ -263,9 +276,7 @@
 
 }
 
-@media (max-width: 598px) {
-
-  
+@media (max-width: 598px) {  
   .form .input {
     width: 90%;
   }
@@ -277,6 +288,23 @@
     margin-right: auto;
   }
 
+  .data-card:hover {
+    --tw-shadow: 0 4px 6px -1px rgba(0, 0, 0, 0.1), 0 2px 4px -1px rgba(0, 0, 0, 0.06) !important;
+    box-shadow: var(--tw-ring-offset-shadow, 0 0 #0000), var(--tw-ring-shadow, 0 0 #0000), var(--tw-shadow) !important;
+    padding-left: 1rem !important;
+    padding-right: 1rem !important;
+  }
+
+  #experiencia-lista {
+    display: flex;
+  }
+
+  #experiencia-lista .data-card {
+    padding-top: 0.2rem;
+    padding-bottom: 0.2rem;
+    margin-top: 0.2rem;
+  }
+
   .identity-section {
     display: block;
     text-align: center;
@@ -286,6 +314,11 @@
     margin-left: auto;
     margin-right: auto;
     text-align: center;
+  }
+
+  .data-list:hover {
+    --tw-shadow: none !important;
+    box-shadow: none !important;
   }
 
   .identity-section img {
@@ -377,7 +410,14 @@
   }
 }
 
-@media (max-width: 376px) {
+@media (max-width: 413px){
+  #experiencia-lista {
+    flex-wrap: wrap;
+    justify-content: center;
+  }
+}
+
+@media (max-width: 390px) {
   .modal .button {
     width: 35%;
     padding: 3px;
@@ -386,6 +426,10 @@
   .modal .form {
     margin-left: 3rem;
     margin-right: 3rem;
+  }
+
+  .footer .div {
+    margin-left: 1rem;
   }
 }
 
@@ -401,7 +445,7 @@
   }
 }
 
-@media (max-width: 336px) {
+@media (max-width: 370px) {
   .identity-section h1 {
     line-height: 1.8rem;
   }  
@@ -414,6 +458,7 @@
     font-size: 1rem !important;
     padding-bottom: 0rem;
     line-height: 1.2rem;
+    padding-top: 0.5rem;
   }
 
   .data-list.mt-3{
