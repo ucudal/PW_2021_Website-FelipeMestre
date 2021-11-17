@@ -1,0 +1,94 @@
+<!DOCTYPE html>
+<html lang="es" class="dark">
+    <!-- https://developer.mozilla.org/en-US/docs/Learn/Accessibility/Test_your_skills:_HTML_accessibility  Para tarea de accesibilidad-->
+<head>
+    <link href="style.css" rel="stylesheet" />
+    <meta charset="UTF-8">
+    <meta http-equiv="X-UA-Compatible" content="IE=edge">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <meta name="description" content="Curriculum Vitae Felipe Mestre">
+    <title>Curriculum Vitae Felipe Mestre</title>
+</head>
+
+<body>
+    <div class="flex flex-col h-full background">
+        <div class="rounded-lg hover:shadow-2xl mx-auto items-end cv-card mt-2">            
+            <div class="identity-section flex items-start m-3 mb-0">
+                <img src="assets/images/profile.jfif" class="max-h-48 m-4 mb-0 hover:hover:shadow-2xl" style="border-radius: 0px 75px 85px 75px;"
+                alt="Mi foto de perfil">
+                <div class="pt-4 ">
+                    <h1 class="text-4xl font-sans my-auto ">Felipe Mestre</h1>            
+                    <p class="pt-4 prose max-w-2xl">
+                        Soy uruguayo, vivo en la ciudad de Montevideo y tengo 22 años, me gusta la musica y la historia. 
+                        Estoy cursando cuarto año de Ingeniería en informática en la Universidad Católica del Uruguay. 
+                        Actualmente trabajo como desarrollador full - stack en una empresa llamada Inzol Consulting. 
+                    </p>        
+                </div>
+            </div>
+            <div class="flex flex-col self-center align">
+                <div class="data-list ml-8 hover:shadow-2xl hover:px-2 rounded-full"> <!-- Educacion -->
+                    <h2 class="text-2xl font-sans pb-1 pt-2">Educacion</h2>
+                    <ul class="ml-32">
+                        <li class="flex pt-1 ">
+                            <a class="w-full" rel="noopener" target="_blank" href="https://carreras.ucu.edu.uy/index.php/informatica?gclid=CjwKCAjwk6-LBhBZEiwAOUUDp-4W6K_wWH-BzxsQfBJLMSpNPCtCRQWKw2szGcCtYBntJ7ZcmrPU-RoC9ckQAvD_BwE">
+                            <div class="data-card flex items-center justify-start w-11/12 px-12 rounded-xl shadow-md hover:shadow-2xl hover:px-16">
+                                <div class="dataIcon">
+                                    <img src="assets/images/catolica.jfif" class="w-12" alt="Logo de la universida catolica del Uruguay">
+                                </div>
+                                <div class="prose">
+                                    <h3>Universidad Catolica del Uruguay (2018 - 2022)</h3>
+                                    <p>Cursando</p>
+                                </div>
+                            </div>
+                            </a>
+                        </li>
+                        <li class="flex pt-1">
+                            <a class="w-full" rel="noopener" target="_blank" href="https://michiganassessment.org/michigan-tests/ecpe/">
+                            <div class="data-card flex items-center justify-start w-11/12 px-12 rounded-xl shadow-md hover:shadow-2xl hover:px-20">
+                                <div class="dataIcon"> 
+                                    <img src="assets/images/michigan.png" class="w-12" alt="Logo de la universidad de Michigan">
+                                </div>
+                                <div class="prose">
+                                    <h3>Michigan language Assestment</h3>
+                                    <p>Certificate of Proficiency in English (2017)</p>
+                                </div>
+                            </div>
+                            </a>
+                        </li> 
+                    </ul>
+                </div>
+    
+                <div class="data-list ml-8 hover:shadow-2xl hover:px-2 pb-4 mt-3 rounded-full"> <!-- Exp -->
+                    <h2 class="text-2xl font-sans pb-2 ">Experiencia</h2>
+                    <ul class="ml-32">
+                        <li >
+                            <div id="experiencia" class="data-card items-end flex justify-start cursor-pointer px-12 w-11/12 rounded-xl shadow-md hover:shadow-2xl hover:px-20">
+                                <div class="dataIcon">
+                                    <img src="assets/images/inzol.svg" alt="Logo de la empresa Inzol Consulting">
+                                </div>
+                                <div class="prose"> 
+                                    <h3>Inzol Consulting</h3>
+                                    <p>Full Stack Developer</p>
+                                </div>
+                            </div>              
+                        </li>
+                    </ul>
+                </div>
+            </div>
+        </div>
+    </div>
+    <footer class="flex justify-between footer">
+        <div class="flex items-center ml-12" style="margin-left: 3rem;">
+            <a  rel="noopener" target="_blank" href="https://www.linkedin.com/in/felipe-mestre-freire-55224816a">
+                <img  src="assets/icons/linkedin-1.svg" alt="LinkedIntLogo" class="hover:opacity-50">
+            </a>
+            <a class="ml-3 mt-1" rel="noopener" target="_blank" href="https://twitter.com/FelipeM1899">
+                <img  src="assets/icons/twitter-1.svg" alt="Twitter" href="https://twitter.com/FelipeM1899" class="hover:opacity-50">
+            </a>
+        </div>
+        <button class="hover:bg-blue-400 hover:border-blue-500 button" style="margin-bottom: 0.5rem;">Contactar</button>
+    </footer>
+    <script src="index.js"></script>     
+    <script src="experienceModal.js"></script>
+</body>
+</html>
