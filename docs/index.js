@@ -49,7 +49,7 @@ function showModalHandler() {
     phoneField.pattern = '[0-9]{9}';
     var mailField = document.createElement('input');
     mailField.id = 'mailField';
-    mailField.style = 'margin-bottom : 0rem !important;';
+    mailField.style = 'margin-bottom : 1rem !important;';
     mailField.placeholder = 'Email';
     mailField.className = 'input';
     mailField.type = 'email';

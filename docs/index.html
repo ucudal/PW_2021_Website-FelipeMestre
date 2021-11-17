@@ -11,10 +11,10 @@
 </head>
 
 <body>
-    <div class="flex flex-col h-screen background">
-        <div class="rounded-lg hover:shadow-2xl h-screen mx-auto items-end cv-card mt-2">            
-            <div class="flex items-start text-center m-3" style="height: 27%">
-                <img src="assets/images/profile.jfif" class="max-h-48 m-4 hover:hover:shadow-2xl" style="border-radius: 0px 75px 85px 75px;"
+    <div class="flex flex-col h-full background">
+        <div class="rounded-lg hover:shadow-2xl mx-auto items-end cv-card mt-2">            
+            <div class="identity-section flex items-start m-3 mb-0">
+                <img src="assets/images/profile.jfif" class="max-h-48 m-4 mb-0 hover:hover:shadow-2xl" style="border-radius: 0px 75px 85px 75px;"
                 alt="Mi foto de perfil">
                 <div class="pt-4 ">
                     <h1 class="text-4xl font-sans my-auto ">Felipe Mestre</h1>            
@@ -26,43 +26,43 @@
                 </div>
             </div>
             <div class="flex flex-col self-center align">
-                <div class="ml-8 hover:shadow-2xl hover:px-2 text-center rounded-full"> <!-- Educacion -->
-                    <h2 class="text-2xl font-sans pb-2">Educacion</h2>
+                <div class="data-list ml-8 hover:shadow-2xl hover:px-2 rounded-full"> <!-- Educacion -->
+                    <h2 class="text-2xl font-sans pb-1 pt-2">Educacion</h2>
                     <ul class="ml-32">
-                            <li class="flex pt-4 pb-4">
-                                <a class="w-full" rel="noopener" target="_blank" href="https://carreras.ucu.edu.uy/index.php/informatica?gclid=CjwKCAjwk6-LBhBZEiwAOUUDp-4W6K_wWH-BzxsQfBJLMSpNPCtCRQWKw2szGcCtYBntJ7ZcmrPU-RoC9ckQAvD_BwE">
-                                <div class=" flex items-center justify-start w-11/12 px-12 rounded-xl shadow-md hover:shadow-2xl hover:px-16">
-                                    <div class="dataIcon">
-                                        <img src="assets/images/catolica.jfif" class="w-12" alt="Logo de la universida catolica del Uruguay">
-                                    </div>
-                                    <div class="prose">
-                                        <h3>Universidad Catolica del Uruguay (2018 - 2022)</h3>
-                                        <p>Cursando</p>
-                                    </div>
+                        <li class="flex pt-1 ">
+                            <a class="w-full" rel="noopener" target="_blank" href="https://carreras.ucu.edu.uy/index.php/informatica?gclid=CjwKCAjwk6-LBhBZEiwAOUUDp-4W6K_wWH-BzxsQfBJLMSpNPCtCRQWKw2szGcCtYBntJ7ZcmrPU-RoC9ckQAvD_BwE">
+                            <div class="data-card flex items-center justify-start w-11/12 px-12 rounded-xl shadow-md hover:shadow-2xl hover:px-16">
+                                <div class="dataIcon">
+                                    <img src="assets/images/catolica.jfif" class="w-12" alt="Logo de la universida catolica del Uruguay">
                                 </div>
-                                </a>
-                            </li>
-                            <li class="flex pt-4 pb-4">
-                                <a class="w-full" rel="noopener" target="_blank" href="https://michiganassessment.org/michigan-tests/ecpe/">
-                                <div class=" flex items-center justify-start w-11/12 px-12 rounded-xl shadow-md hover:shadow-2xl hover:px-20">
-                                    <div class="dataIcon"> 
-                                        <img src="assets/images/michigan.png" class="w-12" alt="Logo de la universidad de Michigan">
-                                    </div>
-                                    <div class="prose"> 
-                                        <h3>Michigan language Assestment</h3>
-                                        <p>Certificate of Proficiency in English (2017)</p>
-                                    </div>
+                                <div class="prose">
+                                    <h3>Universidad Catolica del Uruguay (2018 - 2022)</h3>
+                                    <p>Cursando</p>
                                 </div>
-                                </a>
-                            </li> 
+                            </div>
+                            </a>
+                        </li>
+                        <li class="flex pt-1">
+                            <a class="w-full" rel="noopener" target="_blank" href="https://michiganassessment.org/michigan-tests/ecpe/">
+                            <div class="data-card flex items-center justify-start w-11/12 px-12 rounded-xl shadow-md hover:shadow-2xl hover:px-20">
+                                <div class="dataIcon"> 
+                                    <img src="assets/images/michigan.png" class="w-12" alt="Logo de la universidad de Michigan">
+                                </div>
+                                <div class="prose">
+                                    <h3>Michigan language Assestment</h3>
+                                    <p>Certificate of Proficiency in English (2017)</p>
+                                </div>
+                            </div>
+                            </a>
+                        </li> 
                     </ul>
                 </div>
     
-                <div class="ml-8 hover:shadow-2xl hover:px-2 text-center rounded-full"> <!-- Exp -->
-                    <h2 class="text-2xl font-sans pb-4 ">Experiencia</h2>
+                <div class="data-list ml-8 hover:shadow-2xl hover:px-2 pb-4 mt-3 rounded-full"> <!-- Exp -->
+                    <h2 class="text-2xl font-sans pb-2 ">Experiencia</h2>
                     <ul class="ml-32">
                         <li >
-                            <div id="experiencia" class="items-end flex justify-start cursor-pointer pb-4 px-12 w-11/12 rounded-xl shadow-md hover:shadow-2xl hover:px-20">
+                            <div id="experiencia" class="data-card items-end flex justify-start cursor-pointer px-12 w-11/12 rounded-xl shadow-md hover:shadow-2xl hover:px-20">
                                 <div class="dataIcon">
                                     <img src="assets/images/inzol.svg" alt="Logo de la empresa Inzol Consulting">
                                 </div>
@@ -76,20 +76,19 @@
                 </div>
             </div>
         </div>
-        <footer class="flex justify-between footer">
-            <div class="flex items-center ml-12" style="margin-left: 3rem;">
-                <a  rel="noopener" target="_blank" href="https://www.linkedin.com/in/felipe-mestre-freire-55224816a">
-                    <img  src="assets/icons/linkedin-1.svg" alt="LinkedIntLogo" class="hover:opacity-50">
-                </a>
-                <a class="ml-3 mt-1" rel="noopener" target="_blank" href="https://twitter.com/FelipeM1899">
-                    <img  src="assets/icons/twitter-1.svg" alt="Twitter" href="https://twitter.com/FelipeM1899" class="hover:opacity-50">
-                </a>
-            </div>
-            <button class="hover:bg-blue-400 hover:border-blue-500 button" style="margin-bottom: 0.5rem;">Contactar</button>
-        </footer>
-            
-        <script src="index.js"></script>     
-        <script src="experienceModal.js"></script>     
     </div>
+    <footer class="flex justify-between footer">
+        <div class="flex items-center ml-12" style="margin-left: 3rem;">
+            <a  rel="noopener" target="_blank" href="https://www.linkedin.com/in/felipe-mestre-freire-55224816a">
+                <img  src="assets/icons/linkedin-1.svg" alt="LinkedIntLogo" class="hover:opacity-50">
+            </a>
+            <a class="ml-3 mt-1" rel="noopener" target="_blank" href="https://twitter.com/FelipeM1899">
+                <img  src="assets/icons/twitter-1.svg" alt="Twitter" href="https://twitter.com/FelipeM1899" class="hover:opacity-50">
+            </a>
+        </div>
+        <button class="hover:bg-blue-400 hover:border-blue-500 button" style="margin-bottom: 0.5rem;">Contactar</button>
+    </footer>
+    <script src="index.js"></script>     
+    <script src="experienceModal.js"></script>
 </body>
 </html>
