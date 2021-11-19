@@ -319,6 +319,9 @@
 
   #experiencia-lista {
     display: flex;
+    flex-wrap: wrap;
+    justify-content: center;
+    
   }
 
   #experiencia-lista .data-card {
@@ -429,13 +432,6 @@
   }
   .modal .h1 {
     font-size: 1.6rem;
-  }
-}
-
-@media (max-width: 413px){
-  #experiencia-lista {
-    flex-wrap: wrap;
-    justify-content: center;
   }
 }
 
