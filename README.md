@@ -4,15 +4,13 @@
 La idea de este repositorio es desarrollar un cv virtual con html, css y javascript. 
 
 ### Como ejecutar la pagina?
-Clonar el repo y ejecutar el archivo index.html de la carpeta docs. O sino ingresar a https://ucudal.github.io/PW_2021_Website-FelipeMestre/ que usa gh pages, este es el motivo de tener una carpeta assets dentro de docs ya que gh no deja acceder a carpetas del repo fuera de docs
+Clonar el repo y ejecutar el archivo index.html de la carpeta docs. O sino ingresar a https://ucudal.github.io/PW_2021_Website-FelipeMestre/ que usa gh pages, este es el motivo de tener una carpeta assets dentro de docs ya que gh no deja acceder a carpetas del repo fuera de docs. Hay que levantar REPLIT
 
 ### Features de la pagina
 Haciendo clic en cualquiera de las tres tarjetas se abre informacion acerca de. En la tercer tarjeta es un modal hecho por mi. 
-Las tarjetas, la card del cv y la foto del perfil presentan responsividad.
+Las tarjetas, la card del cv y la foto del perfil presentan responsividad. La versión mobile funciona, el modal de contacto válida los campos obligatorios y su formato. Cuando se manda un contacto recibimos una cookie y se notifica con javascript. Se consumen datos sobre la experiencia laboral desde una api en replit, en base a estos datos se crean 
+tarjetas dinámicamente con un modal que agrega información.
 
 ### Mejoras a realizar
-1. Responsividad ante tamaños de pantalla distintos
-2. Tipos de letra, color de las letras, fondos, botones. <meme src='graphicDesignIsMyPassion.png'> </meme>
-3. Las imagenes del apartado de educacion
-4. Agregar animaciones a la aparicion de los modals. Que el modal que aparece clickeando en la tarjeta de inzol aparezca cuando le pones el mouse arriba y se cierrre cuando lo sacas
+Ninguna !
 
