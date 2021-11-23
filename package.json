@@ -1,0 +1,37 @@
+{
+  "name": "cv",
+  "version": "1.0.0",
+  "description": "Curriculum vitae de Felipe Mestre",
+  "main": "index.js",
+  "scripts": {
+    "test": "npm run test",
+    "start": "browser-sync start --server --serveStatic 'docs' --files '*/.html, */.css'",
+    "tailwind": "tailwindcss -i ./src/tailwind.css -o ./docs/style.css --jit",
+    "tailwind:watch": "npm run tailwind -- --watch",
+    "uglify": "npx uglify-js docs/index.js -o ./docs/script.min.js",
+    "build": "tsc docs/index.ts",
+    "build-api": "tsc docs/callApi.ts"
+  },
+  "repository": {
+    "type": "git",
+    "url": "git+https://FelipeMestre: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@github.com/ucudal/PW_2021_Website-FelipeMestre.git"
+  },
+  "author": "Felipe Mestre",
+  "license": "ISC",
+  "bugs": {
+    "url": "https://github.com/ucudal/PW_2021_Website-FelipeMestre/issues"
+  },
+  "homepage": "https://github.com/ucudal/PW_2021_Website-FelipeMestre#readme",
+  "devDependencies": {
+    "autoprefixer": "^10.3.3",
+    "browser-sync": "^2.27.5",
+    "postcss": "^8.3.6"
+  },
+  "dependencies": {
+    "@tailwindcss/typography": "^0.4.1",
+    "tailwindcss": "^2.2.11",
+    "tsc": "^2.0.3",
+    "typescript": "^4.4.4",
+    "uglify-js": "^3.14.2"
+  }
+}
