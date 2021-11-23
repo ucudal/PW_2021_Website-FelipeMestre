@@ -318,10 +318,7 @@
   }
 
   #experiencia-lista {
-    display: flex;
-    flex-wrap: wrap;
-    justify-content: center;
-    
+    justify-content: center;    
   }
 
   #experiencia-lista .data-card {
